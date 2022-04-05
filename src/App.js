@@ -1,27 +1,30 @@
-import React, {Fragment} from 'react'
+import React, { Fragment } from 'react';
+
 import Header from './components/Header';
-import Datos from './components/Datos';
-import Herramientas from './components/Herramientas';
-import Portafolio from './components/Portafolio';
-import Titulo from './components/Titulo';
-import Contactos from './components/Contactos';
+import Home from './components/Home';
+import About from './components/About';
+import Port from './components/Port';
+import AllTools from './components/AllTools';
+import AllTollsSecondary from './components/AllToolsSecondary';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <Fragment className='fragment'>
+    <div className='wrapper'>
       <Header/>
-      <div className='contenedor-app'>
-        <div className='seccion-principal'>
-          <div className='divSec'>
-            
-            <Datos/>
-            <Herramientas/>
-            <Portafolio/>
-          </div>
-          <Contactos/>
-        </div>
-      </div>
-    </Fragment>
+      <main className='main'>
+        <Home/>
+      </main>
+      <About/>
+      <AllTools/>
+      <AllTollsSecondary/>
+      <Port/>
+      <Contact/>
+      <footer className='footer'>
+        <Footer/>
+      </footer>
+    </div>
   );
 }
 

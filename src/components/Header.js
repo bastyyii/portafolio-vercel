@@ -1,19 +1,20 @@
 import React from 'react';
-import icon from './images/icon.jpg';
+
 const Header = () => {
-    return (  
-        <header className=''>
-            <div id='' className='app-header color'>
-                <p className='nombre-usuario'>Bienvenido a mi portafolio, yo soy <span>Bastian</span></p>
-                <nav className='nav-principal'>
-                    <div className='divNav'>
-                        <a href='#'>Inicio</a>
-                        <a href='#datos'>Mis datos</a>
-                        <a href='#portafolio'>Mi portafolio</a>
-                        <a href='#contactos'>Mis contactos</a>
-                    </div>
-                </nav>
-            </div>
+    return ( 
+        <header>
+            <nav className='navbar'>
+                <div className='brand'>
+                    <h2>B<span>S</span></h2>
+                </div>
+                <ul className='menu'>
+                    <li className='active'><a href='#Home'>Inicio</a></li>
+                    <li className='active'><a href='#About'>Sobre mi</a></li>
+                    <li className='active'><a href='#Tools'>Herramientas</a></li>
+                    <li className='active'><a href='#Port'>Portafolio</a></li>
+                    <li className='active'><a href='#Contact'>Contactos</a></li>
+                </ul>
+            </nav>
         </header>
     );
 }
